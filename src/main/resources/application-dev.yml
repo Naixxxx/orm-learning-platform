@@ -1,0 +1,7 @@
+app:
+  demo:
+    enabled: true
+    password: ${DEMO_PASSWORD}
+logging:
+  level:
+    ru.study.platform: DEBUG

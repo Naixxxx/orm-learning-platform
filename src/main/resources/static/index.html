@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#162c51">
+    <title>Практикум · ORM Learning Platform</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+</head>
+<body>
+<aside class="sidebar">
+    <a class="brand" href="/"><span class="brand-symbol">п.</span><span>практикум<small>ORM LEARNING PLATFORM</small></span></a>
+    <p class="nav-label">ВАШЕ ОБУЧЕНИЕ</p>
+    <nav aria-label="Основная навигация">
+        <button class="nav-item active" data-nav="catalog"><span>▦</span> Каталог курсов</button>
+        <button class="nav-item" data-nav="my"><span>◷</span> Моё обучение</button>
+        <button class="nav-item" data-nav="results"><span>✓</span> Работы и результаты</button>
+        <button class="nav-item" data-nav="editor"><span>✎</span> Управление</button>
+        <button class="nav-item" data-nav="profile"><span>◉</span> Мой профиль</button>
+    </nav>
+    <div class="sidebar-footer"><span class="status-dot"></span> Создавайте. Изучайте. Практикуйте.<a href="/swagger-ui.html" target="_blank" rel="noopener">Документация API ↗</a></div>
+</aside>
+<div class="workspace">
+    <header class="topbar">
+        <span>Образовательная платформа <span class="separator">/</span> <strong id="breadcrumb">Каталог курсов</strong></span>
+        <div id="account"><button class="button small" data-action="login">Войти в аккаунт ↗</button></div>
+    </header>
+    <main id="main" tabindex="-1"></main>
+    <footer class="page-footer"><span>Практикум · Учимся понимать данные</span><span>Java 21 / Spring Boot / PostgreSQL</span></footer>
+</div>
+<dialog id="modal">
+    <div class="modal-heading"><h2 id="modal-title"></h2><button class="icon-button" id="close-modal" aria-label="Закрыть">×</button></div>
+    <div id="modal-body"></div>
+</dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

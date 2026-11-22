@@ -1,0 +1,16 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        generate_statistics: true
+app:
+  jwt:
+    secret: test-only-signing-secret-with-at-least-sixty-four-bytes-not-for-production
+  demo:
+    enabled: true
+    password: test-demo-password-2026
+logging:
+  level:
+    org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: OFF
+    org.springframework: WARN
+    org.hibernate: WARN
